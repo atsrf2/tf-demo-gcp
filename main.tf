@@ -1,12 +1,12 @@
-/*
+
 resource "google_storage_bucket" "auto-expire" {
-  name          = "pure-feat-417019-bucket"
-  location      = "US"
-  force_destroy = true
+  name          = var.name
+  location      = var.location
+  force_destroy = var.force_destroy
 
   lifecycle_rule {
     condition {
-      age = 5
+      age = var.age
     }
     action {
       type = "Delete"
@@ -15,11 +15,10 @@ resource "google_storage_bucket" "auto-expire" {
 
   lifecycle_rule {
     condition {
-      age = 1
+      age = var.age
     }
     action {
       type = "AbortIncompleteMultipartUpload"
     }
   }
 }
-*/
