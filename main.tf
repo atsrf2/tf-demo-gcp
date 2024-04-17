@@ -6,7 +6,7 @@ resource "google_storage_bucket" "auto-expire" {
 
   lifecycle_rule {
     condition {
-      age = var.age
+      age = var.age1
     }
     action {
       type = "Delete"
@@ -15,7 +15,7 @@ resource "google_storage_bucket" "auto-expire" {
 
   lifecycle_rule {
     condition {
-      age = var.age
+      age = var.age2
     }
     action {
       type = "AbortIncompleteMultipartUpload"

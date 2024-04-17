@@ -14,12 +14,12 @@ variable "force_destroy" {
   default = true
 }
 
-variable "age" {
+variable "age1" {
   type = number
   default = 5
 }
 
-variable "age" {
+variable "age2" {
   type = number
   default = 1
 }
