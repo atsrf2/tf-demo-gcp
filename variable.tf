@@ -16,10 +16,10 @@ variable "force_destroy" {
 
 variable "age1" {
   type = number
-  default = 5
+  default = 50
 }
 
 variable "age2" {
   type = number
-  default = 1
+  default = 10
 }
