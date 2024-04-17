@@ -1,4 +1,4 @@
-
+/*
 resource "google_storage_bucket" "auto-expire" {
   name          = "pure-feat-417019-bucket"
   location      = "US"
@@ -22,3 +22,4 @@ resource "google_storage_bucket" "auto-expire" {
     }
   }
 }
+*/
