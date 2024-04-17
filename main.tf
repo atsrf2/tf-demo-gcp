@@ -1,4 +1,4 @@
-
+/*
 resource "google_storage_bucket" "auto-expire" {
   name          = var.name
   location      = var.location
@@ -22,3 +22,5 @@ resource "google_storage_bucket" "auto-expire" {
     }
   }
 }
+
+*/
